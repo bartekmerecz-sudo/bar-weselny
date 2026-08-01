@@ -1,0 +1,50 @@
+BURSZTYN — mobile bar
+IDENTYFIKACJA WIZUALNA / instrukcja
+
+---------------------------------------------------------------
+PALETA
+  Grafit    #1A1613   tla, tekst na jasnym
+  Zloto     #D9A441   kontur znaku, akcenty na ciemnym
+  Bursztyn  #C8891F   plyn w kieliszku, kreski, akcenty
+  Krem      #E8DCC8   tekst na ciemnym tle
+  Krem tlo  #F2EBDD   jasne tlo dokumentow (zamiast bieli)
+
+TYPOGRAFIA
+  Naglowki i logotyp:  Crimson Pro   (darmowy, Google Fonts)
+  Teksty pomocnicze:   Outfit        (darmowy, Google Fonts)
+
+---------------------------------------------------------------
+KTORY PLIK KIEDY
+
+  bursztyn-poziom-ciemne         strona www, stopka maila, prezentacje
+  bursztyn-poziom-jasne          dokumenty na jasnym tle, faktury, umowy
+  bursztyn-poziom-przezroczyste  na zdjecia i wlasne tla (PNG bez tla)
+  bursztyn-pion-ciemne           posty kwadratowe, plakaty, roll-up
+  bursztyn-pion-jasne            druk na jasnym papierze
+  bursztyn-sygnet-ciemne         AWATAR INSTAGRAM / Facebook / Google
+  bursztyn-sygnet-jasne          pieczatka, wizytowka na jasnym
+  bursztyn-znak-zloty            sam znak, bez napisu — male formaty
+  bursztyn-mono-czarny           haft, grawer, pieczatka, druk 1-kolor
+  bursztyn-mono-kremowy          haft na ciemnym materiale (fartuch)
+
+  SVG = wektor, do druku i skalowania bez straty jakosci
+  PNG = do internetu, social mediow, szybkiego uzycia
+
+---------------------------------------------------------------
+ZASADY
+
+  1. Wokol logo zostaw wolna przestrzen rowna wysokosci kieliszka.
+  2. Nie rozciagaj — skaluj zawsze proporcjonalnie.
+  3. Nie zmieniaj kolorow. Na nietypowym tle uzyj wersji mono.
+  4. Minimalna szerokosc znaku w druku: 15 mm.
+  5. Nie umieszczaj logo na zdjeciu bez przyciemnienia tla.
+  6. Na ciemnym tle: wersja zlota. Na jasnym: wersja grafitowa.
+
+---------------------------------------------------------------
+DO ZROBIENIA PRZEZ CIEBIE
+
+  [ ] Wykupic domene (np. bursztynbar.pl)
+  [ ] Zalozyc @bursztyn.bar na Instagramie — konto FIRMOWE lub TWORCY
+  [ ] Ustawic sygnet jako awatar
+  [ ] Wizytowka Google (Profil Firmy) — daje wyniki lokalne
+  [ ] Podmienic dane kontaktowe w ofercie (telefon, mail)
