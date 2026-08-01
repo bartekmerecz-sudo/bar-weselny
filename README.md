@@ -18,6 +18,9 @@ OGLOSZENIA.md                       gotowe teksty na OLX i grupy weselne
 assets/                             logo: 10 wersji × SVG + PNG
 assets/JAK-UZYWAC.txt               który plik logo kiedy
 oferta/BURSZTYN-oferta-2027.pdf     oferta dla par młodych
+grafiki/olx-*.png                   3 grafiki na ogłoszenia, 1200 × 900
+grafiki/karty-zrodlo.html           źródło grafik — edytuj i wyrenderuj ponownie
+grafiki/FILOZOFIA-WIZUALNA.md       język wizualny marki
 gen_logo.py                         generator plików logo   → assets/
 gen_oferta.py                       generator oferty PDF    → oferta/
 ```
