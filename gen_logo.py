@@ -5,8 +5,10 @@ import cairosvg
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
-FONTS = "/mnt/skills/examples/canvas-design/canvas-fonts"
-OUT = "/home/claude/bursztyn/logo"
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+FONTS = os.environ.get("FONTS", "/mnt/skills/examples/canvas-design/canvas-fonts")
+OUT = os.path.join(HERE, "assets")
 os.makedirs(OUT, exist_ok=True)
 
 # ---------- paleta ----------
