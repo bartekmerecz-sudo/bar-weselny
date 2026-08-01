@@ -6,9 +6,14 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 
-F = "/mnt/skills/examples/canvas-design/canvas-fonts"
-LOGO = "/home/claude/bursztyn/logo"
-OUT = "/mnt/user-data/outputs/BURSZTYN-oferta-2027.pdf"
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+F = os.environ.get("FONTS", "/mnt/skills/examples/canvas-design/canvas-fonts")
+LOGO = os.path.join(HERE, "assets")
+OUT = os.path.join(HERE, "oferta", "BURSZTYN-oferta-2027.pdf")
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
 for n, f in [
     ("Serif", "CrimsonPro-Regular"), ("SerifIt", "CrimsonPro-Italic"),

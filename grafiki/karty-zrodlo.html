@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:'Crimson';src:url('fonts/CrimsonPro-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Crimson';src:url('fonts/CrimsonPro-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Crimson';src:url('fonts/CrimsonPro-Italic.ttf') format('truetype');font-style:italic}
+@font-face{font-family:'Outfit';src:url('fonts/Outfit-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Outfit';src:url('fonts/Outfit-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Plex';src:url('fonts/IBMPlexMono-Regular.ttf') format('truetype')}
+
+:root{
+  --grafit:#12100E;
+  --zloto:#D9A441;
+  --bursztyn:#C8891F;
+  --krem:#E8DCC8;
+  --stonowany:#9C8D72;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#3a3a3a;padding:40px;display:flex;flex-direction:column;gap:40px;align-items:flex-start}
+
+.card{
+  width:1200px;height:900px;
+  position:relative;overflow:hidden;
+  background:var(--grafit);
+  font-family:'Crimson',serif;
+  color:var(--krem);
+  font-weight:400;
+}
+
+/* ---- wspólna materia: warstwy osadu ---- */
+.strata{
+  position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg,
+    rgba(217,164,65,.040) 0 1px, transparent 1px 15px);
+}
+.glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(62% 52% at 50% 34%, rgba(200,137,31,.15), transparent 72%);
+}
+.glow--low{background:radial-gradient(78% 46% at 50% 92%, rgba(200,137,31,.13), transparent 74%)}
+.vignette{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 100% at 50% 50%, transparent 42%, rgba(0,0,0,.55) 100%);
+}
+/* miara pojawia się tylko tam, gdzie faktycznie coś mierzy — karta II */
+
+/* ---- typografia ---- */
+.mark{
+  font-family:'Plex',monospace;
+  font-size:11px;letter-spacing:.30em;text-transform:uppercase;
+  color:rgba(156,141,114,.85);
+}
+.label{
+  font-family:'Outfit',sans-serif;font-weight:700;
+  font-size:12px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--bursztyn);
+}
+.tl{position:absolute;top:52px;left:64px}
+.tr{position:absolute;top:52px;right:64px;text-align:right}
+.bl{position:absolute;bottom:50px;left:64px}
+.br{position:absolute;bottom:50px;right:64px;text-align:right}
+
+.glass-line{fill:none;stroke:var(--zloto);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.glass-fill{fill:var(--bursztyn)}
+
+/* ============ KARTA I ============ */
+#k1 .core{
+  position:absolute;left:0;right:0;top:0;bottom:110px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:0 96px 34px;
+}
+#k1 svg{width:96px;margin-bottom:44px;display:block}
+#k1 .name{
+  font-size:118px;line-height:1;
+  letter-spacing:.26em;text-indent:.26em;
+  color:var(--krem);
+}
+#k1 .rule{
+  width:132px;height:1px;margin:42px 0 32px;
+  background:linear-gradient(90deg,transparent,var(--bursztyn) 26%,var(--bursztyn) 74%,transparent);
+}
+#k1 .tag{
+  font-style:italic;font-size:35px;color:var(--zloto);letter-spacing:.012em;
+}
+#k1 .base{
+  position:absolute;left:64px;right:64px;bottom:128px;
+}
+#k1 .base .ln{
+  height:1px;margin-bottom:30px;
+  background:linear-gradient(90deg,transparent,rgba(217,164,65,.30) 22%,rgba(217,164,65,.30) 78%,transparent);
+}
+#k1 .base .who{
+  font-family:'Outfit',sans-serif;font-weight:400;
+  font-size:18px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--stonowany);text-align:center;
+}
+
+/* ============ KARTA II ============ */
+#k2 .head{position:absolute;top:118px;left:64px;right:64px}
+#k2 .head .label{display:block;margin-bottom:16px}
+#k2 .head h2{font-size:62px;font-weight:400;line-height:1.04;letter-spacing:-.012em}
+#k2 .head h2 em{font-style:italic;color:var(--zloto)}
+#k2 .rows{position:absolute;top:284px;left:104px;right:64px}
+#k2 .row{
+  position:relative;
+  display:grid;grid-template-columns:96px 1fr auto;
+  align-items:baseline;gap:22px;
+  padding:20px 0;
+  border-bottom:1px solid rgba(217,164,65,.16);
+}
+/* znacznik miary — jeden na każdą zmierzoną godzinę */
+#k2 .row::before{
+  content:"";position:absolute;left:-40px;top:50%;
+  width:17px;height:1px;background:var(--bursztyn);opacity:.6;
+}
+#k2 .row:last-child{border-bottom:none}
+#k2 .h{font-family:'Plex',monospace;font-size:15px;letter-spacing:.10em;color:var(--bursztyn);white-space:nowrap}
+#k2 .n{font-size:31px;line-height:1.1}
+#k2 .p{font-style:italic;font-size:19px;color:var(--stonowany);text-align:right}
+/* kręgosłup: wieczór u góry, głębia nocy niżej */
+#k2 .spine{
+  position:absolute;left:64px;top:284px;width:2px;height:520px;
+  background:linear-gradient(180deg,
+    rgba(217,164,65,.22), var(--bursztyn) 58%, rgba(200,137,31,.16));
+}
+#k2 .foot{
+  position:absolute;bottom:110px;left:104px;right:64px;
+  font-style:italic;font-size:20px;color:var(--stonowany);
+}
+
+/* ============ KARTA III ============ */
+#k3 .head{position:absolute;top:104px;left:64px;right:64px}
+#k3 .head .label{display:block;margin-bottom:15px}
+#k3 .head h2{font-size:60px;font-weight:400;letter-spacing:-.012em}
+#k3 .cols{
+  position:absolute;top:256px;left:64px;right:64px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+#k3 .col{
+  border:1px solid rgba(156,141,114,.30);
+  padding:32px 26px 30px;
+  position:relative;
+}
+#k3 .col--mid{border-color:var(--zloto);background:rgba(217,164,65,.055)}
+#k3 .cn{
+  font-family:'Outfit',sans-serif;font-weight:700;
+  font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:var(--zloto);
+}
+#k3 .cw{font-style:italic;font-size:20px;color:var(--stonowany);margin:9px 0 26px}
+#k3 .cp{font-size:60px;line-height:1;color:var(--krem);white-space:nowrap}
+#k3 .cu{
+  font-family:'Plex',monospace;font-size:11px;letter-spacing:.20em;
+  text-transform:uppercase;color:var(--stonowany);margin-top:14px;
+}
+#k3 .cl{
+  margin-top:24px;padding-top:20px;border-top:1px solid rgba(217,164,65,.18);
+  font-size:19px;color:rgba(232,220,200,.80);line-height:1.55;
+}
+#k3 .claim{
+  position:absolute;left:64px;right:64px;bottom:122px;
+}
+#k3 .claim .ln{height:1px;margin-bottom:24px;background:linear-gradient(90deg,transparent,rgba(217,164,65,.30) 22%,rgba(217,164,65,.30) 78%,transparent)}
+#k3 .claim .big{
+  font-size:40px;text-align:center;color:var(--krem);letter-spacing:.006em;
+}
+#k3 .claim .big em{font-style:italic;color:var(--zloto)}
+#k3 .claim .sub{
+  font-family:'Outfit',sans-serif;font-size:16px;letter-spacing:.20em;
+  text-transform:uppercase;color:var(--stonowany);text-align:center;margin-top:17px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ KARTA I ============================ -->
+<div class="card" id="k1">
+  <div class="strata"></div>
+  <div class="glow"></div>
+  <div class="vignette"></div>
+
+  <div class="tl mark">Bursztyn · mobile bar</div>
+  <div class="tr mark">Tab. I</div>
+
+  <div class="core">
+    <svg viewBox="0 0 80 84">
+      <polygon class="glass-fill" points="22.5,20 57.5,20 40,42"/>
+      <path class="glass-line" d="M40 42 L8 4 L72 4 L40 42 L40 70 M18 70 L62 70"/>
+    </svg>
+    <div class="name">BURSZTYN</div>
+    <div class="rule"></div>
+    <div class="tag">Bar, który przyjeżdża do Was.</div>
+  </div>
+
+  <div class="base">
+    <div class="ln"></div>
+    <div class="who">Mobilny bar koktajlowy</div>
+  </div>
+
+  <div class="bl mark">Łódź i województwo łódzkie</div>
+  <div class="br mark">Sezon 2027</div>
+</div>
+
+<!-- ============================ KARTA II ============================ -->
+<div class="card" id="k2">
+  <div class="strata"></div>
+  <div class="glow glow--low"></div>
+  <div class="vignette"></div>
+
+  <div class="tl mark">Bursztyn · mobile bar</div>
+  <div class="tr mark">Tab. II</div>
+
+  <div class="head">
+    <span class="label">Przebieg wieczoru</span>
+    <h2>Noc ma swoje <em>godziny</em>.</h2>
+  </div>
+
+  <div class="spine"></div>
+  <div class="rows">
+    <div class="row">
+      <span class="h">21:00</span><span class="n">Aperitif</span>
+      <span class="p">gin · prosecco · grejpfrut</span>
+    </div>
+    <div class="row">
+      <span class="h">23:00</span><span class="n">Sour</span>
+      <span class="p">whisky · cytryna · miód</span>
+    </div>
+    <div class="row">
+      <span class="h">00:00</span><span class="n">Północ</span>
+      <span class="p">rum · espresso · czekolada</span>
+    </div>
+    <div class="row">
+      <span class="h">02:00</span><span class="n">Powrót na parkiet</span>
+      <span class="p">wódka · ogórek · limonka</span>
+    </div>
+    <div class="row">
+      <span class="h">bez alk.</span><span class="n">Bezsenność</span>
+      <span class="p">cytrus · rozmaryn · tonik</span>
+    </div>
+    <div class="row">
+      <span class="h">—</span><span class="n">Drink Pary Młodej</span>
+      <span class="p">komponowany indywidualnie</span>
+    </div>
+  </div>
+
+  <div class="foot">Kartę składamy razem z Wami.</div>
+
+  <div class="bl mark">Łódź i województwo łódzkie</div>
+  <div class="br mark">Sezon 2027</div>
+</div>
+
+<!-- ============================ KARTA III ============================ -->
+<div class="card" id="k3">
+  <div class="strata"></div>
+  <div class="glow glow--low"></div>
+  <div class="vignette"></div>
+
+  <div class="tl mark">Bursztyn · mobile bar</div>
+  <div class="tr mark">Tab. III</div>
+
+  <div class="head">
+    <span class="label">Cennik</span>
+    <h2>Trzy warianty</h2>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="cn">Kameralny</div>
+      <div class="cw">do 60 gości</div>
+      <div class="cp">2 900 zł</div>
+      <div class="cu">bez alkoholu</div>
+      <div class="cl">1 barman<br>6 godzin<br>4 drinki</div>
+    </div>
+    <div class="col col--mid">
+      <div class="cn">Pełny</div>
+      <div class="cw">do 120 gości</div>
+      <div class="cp">4 300 zł</div>
+      <div class="cu">bez alkoholu</div>
+      <div class="cl">2 barmanów<br>8 godzin<br>6 drinków</div>
+    </div>
+    <div class="col">
+      <div class="cn">Autorski</div>
+      <div class="cw">do 120 gości</div>
+      <div class="cp">5 400 zł</div>
+      <div class="cu">bez alkoholu</div>
+      <div class="cl">karta od zera<br>degustacja<br>drink pary</div>
+    </div>
+  </div>
+
+  <div class="claim">
+    <div class="ln"></div>
+    <div class="big">Alkohol kupujecie Wy. <em>Resztą zajmujemy się my.</em></div>
+    <div class="sub">Dojazd do 50 km od Łodzi w cenie</div>
+  </div>
+
+  <div class="bl mark">Łódź i województwo łódzkie</div>
+  <div class="br mark">Sezon 2027</div>
+</div>
+
+</body>
+</html>
