@@ -1,7 +1,14 @@
 # OGŁOSZENIA — gotowe teksty
 
-Do skopiowania. Wszędzie, gdzie jest `[TELEFON]`, `[MAIL]` i `[IG]`,
-podmień na prawdziwe dane — te same, które wstawisz do `index.html`.
+Do skopiowania, dane są już prawdziwe:
+
+```
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn
+```
+
+**Telefonu nie podajemy** — kontakt idzie mailem i przez Instagram. Jeśli kiedyś
+zdecydujesz się go publikować, dopisz go tu i w stopce `index.html`.
 
 ---
 
@@ -91,9 +98,8 @@ zrobić dobrze.
 Napiszcie datę wesela, liczbę gości i miejsce. Odpowiemy w ciągu
 doby z wolnymi terminami i wyceną.
 
-[TELEFON]
-[MAIL]
-[IG]
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn
 ```
 
 ## OLX 2 — krótkie, na przewijanie z telefonu
@@ -128,7 +134,7 @@ Ceny bez alkoholu. Dojazd do 50 km od Łodzi w cenie.
 
 Łódź i województwo łódzkie. Rezerwacje na 2027.
 
-[TELEFON] · [MAIL]
+kontaktbursztyn.barweselny@gmail.com · @barweselnybursztyn
 ```
 
 ## OLX 3 — poza sezonem: urodziny, firmówki, sylwester
@@ -163,7 +169,7 @@ większe przyjęcia — wycena indywidualna
 Ceny bez alkoholu. Łódź i okolice, dojazd do 50 km w cenie.
 Karta drinków dopasowana do okazji — na firmówkę inna niż na urodziny.
 
-[TELEFON] · [MAIL]
+kontaktbursztyn.barweselny@gmail.com · @barweselnybursztyn
 ```
 
 > Cennik dla imprez niewesełnych nie istnieje jeszcze na stronie.
@@ -295,7 +301,7 @@ piętnaście sal w promieniu 50 km.
 ```
 Dzień dobry,
 
-nazywam się [IMIĘ], prowadzę BURSZTYN — mobilny bar koktajlowy
+nazywam się Bartek, prowadzę BURSZTYN — mobilny bar koktajlowy
 działający w Łodzi i okolicach. Piszę w sprawie sezonu 2027.
 
 Świadczymy wyłącznie usługę barmańską: przywozimy bar, sprzęt, szkło,
@@ -313,8 +319,8 @@ pytają, chętnie umówię się na krótką rozmowę albo przyjadę pokazać spr
 Oferta: bursztyn.barweselny.pl
 
 Pozdrawiam,
-[IMIĘ]
-[TELEFON]
+Bartek
+kontaktbursztyn.barweselny@gmail.com
 ```
 
 ---
@@ -350,8 +356,8 @@ Termin blokuję na tydzień od tej wiadomości bez żadnych zobowiązań.
 Rezerwację potwierdza umowa i zadatek 30%.
 
 Pozdrawiam,
-[IMIĘ]
-[TELEFON]
+Bartek
+kontaktbursztyn.barweselny@gmail.com
 ```
 
 Załącz `oferta/BURSZTYN-oferta-2027.pdf`.

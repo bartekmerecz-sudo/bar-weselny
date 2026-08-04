@@ -26,23 +26,25 @@ cze–wrz    sezon 2027
 
 ---
 
-## Krok 1 — Dane kontaktowe (dziś, 1–2 h)
+## Krok 1 — Uruchomienie (dziś)
 
-Bez tego strona jest atrapą. W `index.html` i w PDF-ie są zaślepki.
+- [x] **Mail** — `kontaktbursztyn.barweselny@gmail.com`. Jest na stronie
+      i w stopce oferty PDF.
+- [x] **Telefon** — świadomie nie publikujemy. Zapytanie mailem od razu
+      zawiera datę, liczbę gości i miejsce, więc pierwsza odpowiedź może być
+      konkretna. W stopce `index.html` czeka zakomentowany link `tel:`,
+      jeśli decyzja się zmieni.
+- [ ] **Instagram `@barweselnybursztyn`** — konto firmowe. Awatar:
+      `assets/bursztyn-sygnet-ciemne.png`, bio w [OGLOSZENIA.md](OGLOSZENIA.md).
+- [ ] **Facebook — profil firmowy.** Ustawienia i pierwsze posty:
+      [FACEBOOK.md](FACEBOOK.md).
+- [ ] **Włącz GitHub Pages** (Settings → Pages → main → / root).
 
-- [ ] **Numer telefonu.** Osobna karta prepaid albo eSIM na firmę. Nie mieszaj
-      z prywatnym — będziesz odbierał w pracy.
-- [ ] **Mail.** Domena `bursztyn.barweselny.pl` jest już w `CNAME`.
-      Jeśli masz do niej dostęp, ustaw `kontakt@`. Jeśli nie — Gmail
-      `bursztyn.bar@gmail.com` na start wystarczy, tylko konsekwentnie.
-- [ ] **Instagram `@bursztyn.bar`** — konto firmowe. Awatar:
-      `assets/bursztyn-sygnet-ciemne.png`.
-- [ ] Podmień wszystkie trzy w `index.html` (szukaj `DANE ZASTĘPCZE`)
-      i przegeneruj PDF: `python3 gen_oferta.py`.
-- [ ] Włącz GitHub Pages (Settings → Pages → main → / root).
-
-**Nie publikuj strony przed podmianą.** Martwy telefon na stronie kosztuje
-więcej niż brak strony.
+**Zanim włączysz Pages:** plik `CNAME` wskazuje na `bursztyn.barweselny.pl`,
+a ta domena rozwiązuje się na inny serwer niż GitHub Pages. Albo dodaj w DNS
+rekord `CNAME` z `bursztyn` na `bartekmerecz-sudo.github.io`, albo usuń plik
+`CNAME` i ruszaj pod adresem `github.io`. Bez tego strona będzie niedostępna
+pod oboma adresami.
 
 ## Krok 2 — Zdjęcia (wrzesień–październik)
 
