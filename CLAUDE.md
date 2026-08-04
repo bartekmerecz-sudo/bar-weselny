@@ -13,8 +13,9 @@ klientów ani zdjęć z realizacji.
 **Jedyne zadanie strony:** doprowadzić parę młodą do wysłania zapytania
 o termin na sezon 2027.
 
-Właściciel pracuje na etacie w IT, barmanem był wcześniej (3 lata).
-Firma jest działalnością dodatkową, prowadzoną w weekendy.
+Właściciel pracuje na etacie w IT, barmanem był wcześniej (3 lata),
+ma kurs barmański I stopnia. Firma jest działalnością dodatkową,
+prowadzoną w weekendy.
 
 ---
 
@@ -115,27 +116,34 @@ nie jest dekoracją. Nie zamieniaj na zwykłą listę.
 - [x] Pliki logo (10 wersji, SVG + PNG)
 - [x] Oferta PDF dla par młodych
 - [x] Strona — `index.html`
+- [x] Dane kontaktowe na stronie i w ofercie PDF (mail + Instagram, bez telefonu)
 
 ### Do zrobienia
-- [ ] Podmienić dane kontaktowe (patrz niżej — są zastępcze!)
 - [ ] Sesja stylizowana z fotografem → pierwsze zdjęcia
-- [ ] Instagram @bursztyn.bar (konto firmowe)
+- [ ] Instagram @barweselnybursztyn (konto firmowe)
 - [ ] Wzór umowy z zadatkiem
 - [ ] Szablon listy zakupowej alkoholu
 - [ ] Książeczka sanepidowska
 - [ ] Ubezpieczenie OC (sprawdzić wyłączenia alkoholowe w OWU)
 
-### DANE ZASTĘPCZE — WYMAGAJĄ PODMIANY
+### Dane kontaktowe — aktualne
 
-W `index.html` są nieprawdziwe dane kontaktowe:
+W `index.html` są prawdziwe dane. Nie zastępuj ich zaślepkami:
 
 ```
-@bursztyn.bar
-kontakt@bursztynbar.pl
-+48 000 000 000
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn        → instagram.com/barweselnybursztyn
 ```
 
-Szukaj komentarza `<!-- DANE ZASTĘPCZE -->`. Nie publikuj strony przed podmianą.
+**Telefonu nie publikujemy celowo.** Kontakt idzie mailem i przez Instagram —
+zapytanie na piśmie od razu zawiera datę, liczbę gości i miejsce, więc
+odpowiedź może być konkretna. Nie dodawaj numeru na stronę bez wyraźnej prośby.
+
+W stopce `index.html` został zakomentowany link `tel:` gotowy do odkomentowania,
+jeśli decyzja się zmieni. Zostaw ten komentarz na miejscu.
+
+Te same dane są w stopce oferty PDF (`gen_oferta.py`, sekcja „POROZMAWIAJMY").
+Zmieniasz jedno — zmień oba i przegeneruj PDF.
 
 ---
 

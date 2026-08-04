@@ -69,7 +69,13 @@ FONTS=~/fonty python3 gen_logo.py
 
 ---
 
-## Zanim opublikujesz
+## Dane kontaktowe
 
-W `index.html` i w ofercie są **zastępcze dane kontaktowe**.
-Szukaj `DANE ZASTĘPCZE`. Podmień mail, telefon i nazwę konta na Instagramie.
+```
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn
+```
+
+**Telefon nie jest publikowany celowo** — kontakt idzie mailem i przez Instagram.
+W stopce `index.html` jest zakomentowany link `tel:`, gotowy do odkomentowania,
+jeśli decyzja się zmieni.
