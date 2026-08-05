@@ -46,11 +46,45 @@ python3 -m http.server 8000
 4. Save
 
 Strona pojawi się pod `https://bartekmerecz-sudo.github.io/bar-weselny/`
-w ciągu kilku minut.
+w ciągu kilku minut. Ten adres jest teraz wpisany wszędzie: w `index.html`
+(`canonical`, `og:image`, dane strukturalne) i w tekstach ogłoszeń.
 
-W `CNAME` jest domena `bursztyn.barweselny.pl`. Żeby zadziałała, w DNS
-domeny musi być rekord `CNAME` z `bursztyn` na `bartekmerecz-sudo.github.io`.
-Po propagacji zaznacz **Enforce HTTPS** w ustawieniach Pages.
+## Domena własna — jak ją włączyć
+
+Plik `CNAME` został **usunięty celowo**. Domena `bursztyn.barweselny.pl`
+rozwiązuje się na `185.253.212.22`, a GitHub Pages stoi na
+`185.199.108–111.153`. Sam plik `CNAME` bez wpisu w DNS psuje oba adresy
+naraz: `github.io` przekierowuje na domenę własną, a ta prowadzi w inne
+miejsce. Ogłoszenia z takim linkiem byłyby martwe.
+
+Kolejność włączania jest ważna — **najpierw DNS, potem plik**:
+
+**1. W panelu DNS domeny `barweselny.pl` dodaj rekord:**
+
+```
+typ: CNAME    nazwa: bursztyn    wartość: bartekmerecz-sudo.github.io
+```
+
+**2. Sprawdź, czy propagacja zadziałała** (może potrwać do 24 h):
+
+```bash
+getent hosts bursztyn.barweselny.pl
+# ma pokazać 185.199.108.153 lub .109 / .110 / .111
+```
+
+**3. Dopiero gdy adresy się zgadzają — przywróć plik i podmień adresy:**
+
+```bash
+echo "bursztyn.barweselny.pl" > CNAME
+grep -rl "bartekmerecz-sudo.github.io/bar-weselny" \
+  index.html FACEBOOK.md OGLOSZENIA.md \
+  | xargs sed -i 's|bartekmerecz-sudo\.github\.io/bar-weselny|bursztyn.barweselny.pl|g'
+```
+
+**4. Zaznacz Enforce HTTPS** w Settings → Pages.
+
+Powrót do wersji na `github.io` to ta sama komenda z odwróconymi stronami
+plus `rm CNAME`.
 
 ## Regeneracja plików
 

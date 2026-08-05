@@ -5,7 +5,7 @@ Dane, które wchodzą we wszystkie posty:
 ```
 kontaktbursztyn.barweselny@gmail.com
 @barweselnybursztyn
-bursztyn.barweselny.pl
+bartekmerecz-sudo.github.io/bar-weselny
 ```
 
 Telefonu nie podajemy. Jeśli ktoś pyta w komentarzu o numer, odpisz:
@@ -38,7 +38,7 @@ na pytania, które padają najczęściej.
 | Obszar działania | Łódź + 50 km (nie podawaj adresu domowego) |
 | Zdjęcie profilowe | `assets/bursztyn-sygnet-ciemne.png` |
 | Zdjęcie w tle | `assets/bursztyn-poziom-ciemne.png` |
-| Link | `bursztyn.barweselny.pl` |
+| Link | `bartekmerecz-sudo.github.io/bar-weselny` |
 
 **Opis (krótki):**
 ```
@@ -83,7 +83,7 @@ Przyjeżdżamy do Waszej sali albo w plener, rozkładamy bar i przez całą noc
 robimy drinki na miejscu. Nie stawiamy stołu z butelkami. Prowadzimy bar.
 
 Zaczynamy w sezonie 2027. Terminy są otwarte.
-bursztyn.barweselny.pl
+bartekmerecz-sudo.github.io/bar-weselny
 ```
 
 ### 2 · Model alkoholowy
@@ -256,7 +256,7 @@ Napiszcie datę, liczbę gości i miejsce — odpowiem w ciągu doby z wolnymi
 terminami i wyceną.
 
 kontaktbursztyn.barweselny@gmail.com
-bursztyn.barweselny.pl
+bartekmerecz-sudo.github.io/bar-weselny
 ```
 
 ---
@@ -288,7 +288,7 @@ karta autorska z degustacją — 5 400 zł
 Ceny bez alkoholu, dojazd do 50 km od Łodzi w cenie.
 
 Bierzemy trzy wesela w kwartale, bo prowadzę bar w weekendy obok etatu.
-Karta i szczegóły: bursztyn.barweselny.pl
+Karta i szczegóły: bartekmerecz-sudo.github.io/bar-weselny
 
 Chętnie odpowiem na pytania w komentarzach.
 ```
@@ -324,7 +324,7 @@ Krótko, bez wklejania cennika. Cennik odstrasza w komentarzu.
 ```
 Robimy mobilny bar w łódzkiem — BURSZTYN, terminy 2027. Alkohol kupujecie
 sami po cenach sklepowych, my przywozimy bar, sprzęt, szkło i dodatki.
-Karta i ceny: bursztyn.barweselny.pl
+Karta i ceny: bartekmerecz-sudo.github.io/bar-weselny
 Jeśli chcecie, podliczę pod Waszą liczbę gości — napiszcie ilu i gdzie.
 ```
 
@@ -356,7 +356,7 @@ co zostanie, zostaje u Was. Listę zakupową przygotowujemy my.
 Od 2 900 zł do 60 gości i od 4 300 zł do 120 gości — ceny bez alkoholu,
 bo alkohol kupujecie sami. W tej kwocie jest barman lub dwóch, bar
 z oświetleniem, szkło, cały sprzęt, dodatki i lód na całą noc.
-Pełny cennik: bursztyn.barweselny.pl
+Pełny cennik: bartekmerecz-sudo.github.io/bar-weselny
 ```
 
 **„Robicie w [miejscowość]?"**
@@ -377,7 +377,7 @@ dostaniecie wycenę, a nie samo „wolne/zajęte".
 Sesja jest zaplanowana na najbliższe tygodnie i wrzucę ją tutaj.
 Świadomie nie wstawiam zdjęć z wesel, których nie obsługiwałem —
 w tej branży to zdarza się częściej, niż myślicie.
-Na razie do obejrzenia jest karta i pełna oferta: bursztyn.barweselny.pl
+Na razie do obejrzenia jest karta i pełna oferta: bartekmerecz-sudo.github.io/bar-weselny
 ```
 
 ---

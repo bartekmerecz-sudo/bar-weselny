@@ -40,11 +40,13 @@ cze–wrz    sezon 2027
       [FACEBOOK.md](FACEBOOK.md).
 - [ ] **Włącz GitHub Pages** (Settings → Pages → main → / root).
 
-**Zanim włączysz Pages:** plik `CNAME` wskazuje na `bursztyn.barweselny.pl`,
-a ta domena rozwiązuje się na inny serwer niż GitHub Pages. Albo dodaj w DNS
-rekord `CNAME` z `bursztyn` na `bartekmerecz-sudo.github.io`, albo usuń plik
-`CNAME` i ruszaj pod adresem `github.io`. Bez tego strona będzie niedostępna
-pod oboma adresami.
+Strona rusza pod `bartekmerecz-sudo.github.io/bar-weselny` — ten adres jest
+już wpisany w ogłoszeniach, więc możesz je wystawiać od razu po włączeniu Pages.
+
+Domena `bursztyn.barweselny.pl` czeka na jeden wpis w DNS. Procedura jest
+w [README.md](README.md#domena-własna--jak-ją-włączyć) — **zrób DNS przed
+wystawieniem ogłoszeń**, jeśli chcesz mieć w nich krótszy, firmowy adres.
+Jeśli nie zdążysz, ogłoszenia z adresem `github.io` działają bez zmian.
 
 ## Krok 2 — Zdjęcia (wrzesień–październik)
 

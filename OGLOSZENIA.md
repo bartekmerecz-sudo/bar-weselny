@@ -199,7 +199,7 @@ Wesela i przyjęcia · Łódź i łódzkie
 Alkohol Wasz, reszta nasza
 Terminy 2027 ↓
 ```
-Link: `bursztyn.barweselny.pl` · Awatar: `assets/bursztyn-sygnet-ciemne.png`
+Link: `bartekmerecz-sudo.github.io/bar-weselny` · Awatar: `assets/bursztyn-sygnet-ciemne.png`
 
 **Pierwsze dziewięć postów** — siatka musi być pełna, zanim gdziekolwiek
 podasz link. Para sprawdzi profil przed napisaniem, a pusty profil
@@ -278,7 +278,7 @@ Chciałbym zapytać o dwie rzeczy:
 Jeżeli byliby Państwo otwarci na polecanie nas parom, które o taki bar
 pytają, chętnie umówię się na krótką rozmowę albo przyjadę pokazać sprzęt.
 
-Oferta: bursztyn.barweselny.pl
+Oferta: bartekmerecz-sudo.github.io/bar-weselny
 
 Pozdrawiam,
 Bartek
