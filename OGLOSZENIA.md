@@ -178,53 +178,15 @@ kontaktbursztyn.barweselny@gmail.com · @barweselnybursztyn
 
 ---
 
-## Facebook — grupy weselne
+## Facebook
 
-Szukaj: „Wesele 2027", „Panny Młode — łódzkie", „Giełda terminów ślubnych
-łódzkie", „Ślub i wesele Łódź", „Wesele w stodole Polska".
+Wszystko facebookowe jest w osobnym pliku: **[FACEBOOK.md](FACEBOOK.md)** —
+ustawienia profilu firmowego, dziesięć postów w kolejności publikacji,
+dwa warianty postów do grup weselnych, gotowe odpowiedzi na komentarze
+i Marketplace.
 
-Zasady, których złamanie kosztuje bana: większość grup ma wyznaczony dzień
-na ogłoszenia usługodawców. Sprawdź regulamin w zakładce grupy, zanim
-wkleisz cokolwiek. Nie wchodź w komentarze pod cudzymi pytaniami z ofertą,
-jeśli grupa tego zabrania.
-
-**Post:**
-```
-Mobilny bar koktajlowy na wesela — Łódź i województwo łódzkie,
-terminy 2027.
-
-Przyjeżdżamy do Waszej sali albo w plener, rozkładamy bar i przez
-całą noc robimy drinki na miejscu.
-
-Model jest prosty: alkohol kupujecie Wy, po cenach sklepowych.
-Miesiąc przed weselem dostajecie od nas listę zakupową — konkretne
-butelki i ilości pod Waszą liczbę gości. My przywozimy bar,
-oświetlenie, szkło, sprzęt, dodatki i lód.
-
-do 60 gości — 2 900 zł
-do 120 gości — 4 300 zł
-karta autorska z degustacją — 5 400 zł
-Ceny bez alkoholu, dojazd do 50 km od Łodzi w cenie.
-
-Zaczynamy w 2027 i przyjmujemy trzy rezerwacje w kwartale.
-Szczegóły i karta: bursztyn.barweselny.pl
-
-Chętnie odpowiem na pytania w komentarzach.
-```
-
-**Komentarz-odpowiedź pod pytaniem „a ile alkoholu trzeba kupić?"** —
-to pytanie pada w każdej grupie i jest twoją najlepszą okazją:
-```
-Licząc bezpiecznie: 3–4 drinki na osobę przez całą noc. Przy 100 gościach
-to mniej więcej 10 l mocnego alkoholu w kilku rodzajach, do tego wino
-musujące na aperitif. Ale to zależy od karty — inaczej się liczy, gdy
-w karcie jest sour, a inaczej gdy same longdrinki. Robimy taką listę
-dla par, które u nas rezerwują, i wysyłamy miesiąc przed weselem.
-Jeśli chcecie, mogę podesłać przykładową na priv.
-```
-
-Ten komentarz sprzedaje bez sprzedawania. Odpowiadaj tak zawsze,
-nawet parom, które biorą inny bar.
+Trzymaj to w jednym miejscu. Jeśli poprawisz cennik albo dane kontaktowe,
+zmieniasz je tam, a nie tu i tam.
 
 ---
 
