@@ -32,7 +32,12 @@ Dodatkowa korzyść: OLX i Facebook zdejmują ogłoszenia, które wyglądają
 na handel alkoholem. Jasne „alkohol po Waszej stronie" chroni ogłoszenie
 przed moderacją.
 
-**2. Musisz mieć obrazek.** OLX bez zdjęcia nie istnieje w wynikach.
+**2. Podawaj tylko to, co działa.** Jeśli wystawiasz ogłoszenie przed
+publikacją strony albo przed założeniem Instagrama — wykreśl te linijki
+i zostaw sam mail. Martwy link szkodzi bardziej niż jego brak, a ogłoszenie
+na OLX można później edytować i dopisać adres.
+
+**3. Musisz mieć obrazek.** OLX bez zdjęcia nie istnieje w wynikach.
 Zanim będziesz miał sesję, użyj `assets/bursztyn-pion-ciemne.png` jako
 głównej grafiki, a jako kolejne — zrzut karty drinków ze strony i zrzut
 sekcji z pakietami. To uczciwe: pokazujesz markę i ofertę, nie udajesz
