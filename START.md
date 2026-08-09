@@ -38,15 +38,18 @@ cze–wrz    sezon 2027
       `assets/bursztyn-sygnet-ciemne.png`, bio w [OGLOSZENIA.md](OGLOSZENIA.md).
 - [ ] **Facebook — profil firmowy.** Ustawienia i pierwsze posty:
       [FACEBOOK.md](FACEBOOK.md).
-- [ ] **Włącz GitHub Pages** (Settings → Pages → main → / root).
+- [x] **GitHub Pages** — włączone, deploy z `main`, HTTPS wymuszone.
+      Strona żyje pod `bartekmerecz-sudo.github.io/bar-weselny`.
+- [x] **Ogłoszenie na OLX** — przygotowane. Leży jako nieopłacone,
+      do aktywacji kiedykolwiek. Wróć do niego z **jednym** ogłoszeniem,
+      nie z trzema, gdy darmowe kanały już pracują.
 
-Strona rusza pod `bartekmerecz-sudo.github.io/bar-weselny` — ten adres jest
-już wpisany w ogłoszeniach, więc możesz je wystawiać od razu po włączeniu Pages.
+Domeny własnej **jeszcze nie mamy**. `barweselny.pl`, którą projekt zakładał
+od początku, należy do kogoś innego — jest zaparkowana na AfterMarkecie.
+Wolna wygląda `bursztynbar.pl` (10–80 zł za pierwszy rok). Szczegóły i pełna
+procedura podłączenia: [README.md](README.md#domena-własna--do-wykupienia).
 
-Domena `bursztyn.barweselny.pl` czeka na jeden wpis w DNS. Procedura jest
-w [README.md](README.md#domena-własna--jak-ją-włączyć) — **zrób DNS przed
-wystawieniem ogłoszeń**, jeśli chcesz mieć w nich krótszy, firmowy adres.
-Jeśli nie zdążysz, ogłoszenia z adresem `github.io` działają bez zmian.
+To nie blokuje niczego — adres `github.io` działa i jest wpisany w ogłoszeniach.
 
 ## Krok 2 — Zdjęcia (wrzesień–październik)
 

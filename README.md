@@ -51,95 +51,80 @@ Strona pojawi się pod `https://bartekmerecz-sudo.github.io/bar-weselny/`
 w ciągu kilku minut. Ten adres jest teraz wpisany wszędzie: w `index.html`
 (`canonical`, `og:image`, dane strukturalne) i w tekstach ogłoszeń.
 
-## Domena własna — jak ją włączyć
+## Domena własna — do wykupienia
 
-Plik `CNAME` został **usunięty celowo**. Domena `bursztyn.barweselny.pl`
-rozwiązuje się na `185.253.212.22`, a GitHub Pages stoi na
-`185.199.108–111.153`. Sam plik `CNAME` bez wpisu w DNS psuje oba adresy
-naraz: `github.io` przekierowuje na domenę własną, a ta prowadzi w inne
-miejsce. Ogłoszenia z takim linkiem byłyby martwe.
+**Adres produkcyjny to dziś `bartekmerecz-sudo.github.io/bar-weselny`**
+i jest wpisany wszędzie: w `index.html` (`canonical`, `og:image`, dane
+strukturalne) oraz w tekstach ogłoszeń w `FACEBOOK.md` i `OGLOSZENIA.md`.
 
-Kolejność włączania jest ważna — **najpierw DNS, potem plik**:
+### Czego tu wcześniej nie było, a jest ważne
 
-**Gdzie jest panel.** Domena stoi na serwerach nazw `ns1.aftermarket.pl`
-i `ns2.aftermarket.pl`, czyli strefą DNS zarządza **AfterMarket.pl** —
-tam się logujesz i tam dodajesz rekord.
-Instrukcja producenta: [Jak dodać rekord A, MX, TXT albo CNAME do domeny](https://www.aftermarket.pl/pomoc/pl/domeny/dns/jak_dodac_rekord_a_mx_txt_albo_cname_do_domeny.htm)
+Projekt od początku zakładał adres `bursztyn.barweselny.pl` — plik `CNAME`
+zawierał tę wartość, a zaślepka maila to było `kontakt@bursztynbar.pl`.
+Sprawdzone w sierpniu 2026: **`barweselny.pl` nie należy do nas.** Domena
+jest zaparkowana na AfterMarket.pl (`ns1/ns2.aftermarket.pl`, MX na
+`blackhole.aftermarket.pl`, wildcard na adres parkingowy `185.253.212.22`)
+i na koncie widnieje „Brak zarejestrowanych domen".
 
-**0. Najpierw sprawdź, czy domena jest na Twoim koncie.** Stan strefy
-wygląda na parking, nie na działającą konfigurację:
+Dlatego plik `CNAME` został usunięty i nie należy go przywracać z tą wartością.
+
+### Kandydatka: `bursztynbar.pl`
+
+Sprawdzona przez zapytanie o rekordy NS — brak delegacji, czyli
+**prawdopodobnie wolna**. To sygnał, nie dowód: pewność daje tylko wyszukiwarka
+rejestratora albo WHOIS w [dns.pl](https://www.dns.pl/).
+
+Zajęta jest `barbursztyn.pl` (`ns1.ibc.pl`). Bez delegacji, czyli też
+prawdopodobnie wolne: `bursztyn-bar.pl`, `bursztynbar.com.pl`,
+`bursztynkoktajle.pl`, `barweselnybursztyn.pl`.
+
+Koszt rejestracji `.pl` to zwykle 10–80 zł za pierwszy rok i 60–120 zł
+za kolejne.
+
+### Po wykupieniu — kolejność ma znaczenie
+
+**Najpierw DNS, potem plik `CNAME`.** Odwrotnie zabijesz oba adresy naraz:
+`github.io` zacznie przekierowywać na domenę, która jeszcze nie prowadzi
+do GitHuba.
+
+**1. W panelu rejestratora ustaw rekordy.** Dla domeny głównej to **cztery
+rekordy A** (nie CNAME — CNAME dla domeny głównej jest niedopuszczalny):
 
 ```
-NS  → ns1.aftermarket.pl, ns2.aftermarket.pl
-MX  → blackhole.aftermarket.pl      (poczta nigdzie nie trafia)
-*   → 185.253.212.22                (adres parkingowy AfterMarketu)
+@  A  185.199.108.153
+@  A  185.199.109.153
+@  A  185.199.110.153
+@  A  185.199.111.153
 ```
 
-AfterMarket jest też giełdą domen, więc taki zestaw rekordów mają zarówno
-domeny kupione i nieskonfigurowane, jak i **domeny wystawione na sprzedaż**.
-Jeśli `barweselny.pl` nie ma na liście Twoich domen po zalogowaniu, nie da
-się dodać rekordu i trzeba wybrać inną drogę.
+Dodatkowo dla `www`, jeśli chcesz, żeby działało: `www CNAME bartekmerecz-sudo.github.io`
 
-**1. W panelu AfterMarketu dodaj rekord:**
-
-| Pole w panelu | Wartość |
-|---|---|
-| Typ | `CNAME` |
-| Nazwa hosta | `bursztyn` |
-| Wartość / cel | `bartekmerecz-sudo.github.io` |
-| TTL | domyślny |
-
-Rekord dodajesz przyciskiem **„Dodaj wpis DNS ręcznie"** albo **„Dodaj nowy
-wpis DNS"**, zależnie od tego, czy strefa ma już jakieś rekordy.
-
-Dwa ograniczenia AfterMarketu, oba nas nie blokują:
-CNAME **można ustawić tylko dla subdomeny**, nie dla domeny głównej — a my
-kierujemy subdomenę `bursztyn`, więc jest dobrze. Drugie: CNAME nie może
-istnieć obok rekordu **A dla tej samej nazwy** — jeśli panel pokaże osobny
-rekord A dla `bursztyn`, usuń go najpierw. Wildcard `*` zostaw.
-
-Jeśli domena ma włączony parking albo stronę sprzedażową, wyłącz je —
-inaczej panel może nadpisywać Twoje rekordy.
-
-W panelu `barweselny.pl` jest **wildcard `*`** — dowolna subdomena rozwiązuje
-się na `185.253.212.22`. Dwie konsekwencje:
-
-- **Na plus:** nie musisz nic usuwać. Rekord dla konkretnej nazwy `bursztyn`
-  jest bardziej szczegółowy niż `*` i wygrywa. Usuwaj tylko wtedy, gdy panel
-  pokazuje **osobny** rekord A dla `bursztyn` — CNAME nie może współistnieć
-  z rekordem A dla tej samej nazwy.
-- **Groźne:** wildcard sprawia, że `bursztyn.barweselny.pl` **rozwiązuje się
-  zawsze**, także przed dodaniem CNAME-a. Samo „adres odpowiada" nie jest
-  więc żadnym dowodem. Sprawdzaj **na jaki adres IP**, nie „czy w ogóle".
-
-**2. Sprawdź, czy propagacja zadziałała** (może potrwać do 24 h):
+**2. Sprawdź propagację** (do 24 h):
 
 ```bash
-getent hosts bursztyn.barweselny.pl
+getent hosts bursztynbar.pl
 ```
 
 | Wynik | Znaczenie |
 |-------|-----------|
-| `185.199.108.153` lub `.109` / `.110` / `.111` | gotowe, przechodź do kroku 3 |
-| `185.253.212.22` | **jeszcze nie** — to wildcard, CNAME nie zadziałał lub nie zdążył |
+| `185.199.108–111.153` | gotowe, przechodź do kroku 3 |
+| cokolwiek innego albo brak | jeszcze nie |
 
-Jeśli przełączysz adresy przy `185.253.212.22`, strona i wszystkie linki
-w ogłoszeniach przestaną działać, a DNS nie zgłosi żadnego błędu — domena
-będzie prowadzić na parking AfterMarketu.
-
-**3. Dopiero gdy adresy się zgadzają — przywróć plik i podmień adresy:**
+**3. Dopiero wtedy przywróć plik i podmień adresy w 14 miejscach:**
 
 ```bash
-echo "bursztyn.barweselny.pl" > CNAME
+echo "bursztynbar.pl" > CNAME
 grep -rl "bartekmerecz-sudo.github.io/bar-weselny" \
   index.html FACEBOOK.md OGLOSZENIA.md \
-  | xargs sed -i 's|bartekmerecz-sudo\.github\.io/bar-weselny|bursztyn.barweselny.pl|g'
+  | xargs sed -i 's|bartekmerecz-sudo\.github\.io/bar-weselny|bursztynbar.pl|g'
 ```
 
-**4. Zaznacz Enforce HTTPS** w Settings → Pages.
+Komenda jest sprawdzona na kopii plików — przełącza wszystkie wystąpienia,
+a adresy absolutne wychodzą jako `https://bursztynbar.pl/`, bez zostawionego
+`/bar-weselny/`. Powrót to ta sama komenda z odwróconymi stronami plus `rm CNAME`.
 
-Powrót do wersji na `github.io` to ta sama komenda z odwróconymi stronami
-plus `rm CNAME`.
+**4. Settings → Pages → Custom domain** → wpisz domenę → Save →
+zaznacz **Enforce HTTPS**, gdy przycisk się odblokuje.
 
 ## Regeneracja plików
 
