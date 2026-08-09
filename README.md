@@ -99,6 +99,20 @@ rekordy A** (nie CNAME — CNAME dla domeny głównej jest niedopuszczalny):
 
 Dodatkowo dla `www`, jeśli chcesz, żeby działało: `www CNAME bartekmerecz-sudo.github.io`
 
+> **Najpierw usuń parkingowy rekord A.** AfterMarket po rejestracji sam
+> wstawia do strefy rekord `@ A 185.253.212.22` — swój parking. Sprawdzone
+> na `bursztynbar.pl` zaraz po zakupie: delegacja poszła na `ns1/ns2.aftermarket.pl`,
+> a `@` wskazywał na parking.
+>
+> Ten rekord trzeba **usunąć**, nie tylko dodać cztery nowe obok. Pięć
+> rekordów A dla tej samej nazwy to round robin — przeglądarka losuje jeden
+> z pięciu adresów, więc strona działałaby w czterech przypadkach na pięć,
+> a w piątym pokazywała parking. Taki błąd jest wredny, bo wygląda
+> na „czasem nie działa", nie na błąd konfiguracji.
+>
+> Jeśli domena ma włączoną stronę parkingową albo sprzedażową, wyłącz ją
+> najpierw — inaczej panel może wstawić rekord ponownie.
+
 **2. Sprawdź propagację** (do 24 h):
 
 ```bash
