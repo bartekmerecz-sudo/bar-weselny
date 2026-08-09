@@ -66,12 +66,31 @@ Kolejność włączania jest ważna — **najpierw DNS, potem plik**:
 typ: CNAME    nazwa: bursztyn    wartość: bartekmerecz-sudo.github.io
 ```
 
+W panelu `barweselny.pl` jest **wildcard `*`** — dowolna subdomena rozwiązuje
+się na `185.253.212.22`. Dwie konsekwencje:
+
+- **Na plus:** nie musisz nic usuwać. Rekord dla konkretnej nazwy `bursztyn`
+  jest bardziej szczegółowy niż `*` i wygrywa. Usuwaj tylko wtedy, gdy panel
+  pokazuje **osobny** rekord A dla `bursztyn` — CNAME nie może współistnieć
+  z rekordem A dla tej samej nazwy.
+- **Groźne:** wildcard sprawia, że `bursztyn.barweselny.pl` **rozwiązuje się
+  zawsze**, także przed dodaniem CNAME-a. Samo „adres odpowiada" nie jest
+  więc żadnym dowodem. Sprawdzaj **na jaki adres IP**, nie „czy w ogóle".
+
 **2. Sprawdź, czy propagacja zadziałała** (może potrwać do 24 h):
 
 ```bash
 getent hosts bursztyn.barweselny.pl
-# ma pokazać 185.199.108.153 lub .109 / .110 / .111
 ```
+
+| Wynik | Znaczenie |
+|-------|-----------|
+| `185.199.108.153` lub `.109` / `.110` / `.111` | gotowe, przechodź do kroku 3 |
+| `185.253.212.22` | **jeszcze nie** — to wildcard, CNAME nie zadziałał lub nie zdążył |
+
+Jeśli przełączysz adresy przy `185.253.212.22`, strona i wszystkie linki
+w ogłoszeniach przestaną działać, a DNS nie zgłosi żadnego błędu — domena
+będzie prowadzić na Twój drugi hosting.
 
 **3. Dopiero gdy adresy się zgadzają — przywróć plik i podmień adresy:**
 
