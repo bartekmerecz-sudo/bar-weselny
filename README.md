@@ -61,11 +61,45 @@ miejsce. Ogłoszenia z takim linkiem byłyby martwe.
 
 Kolejność włączania jest ważna — **najpierw DNS, potem plik**:
 
-**1. W panelu DNS domeny `barweselny.pl` dodaj rekord:**
+**Gdzie jest panel.** Domena stoi na serwerach nazw `ns1.aftermarket.pl`
+i `ns2.aftermarket.pl`, czyli strefą DNS zarządza **AfterMarket.pl** —
+tam się logujesz i tam dodajesz rekord.
+Instrukcja producenta: [Jak dodać rekord A, MX, TXT albo CNAME do domeny](https://www.aftermarket.pl/pomoc/pl/domeny/dns/jak_dodac_rekord_a_mx_txt_albo_cname_do_domeny.htm)
+
+**0. Najpierw sprawdź, czy domena jest na Twoim koncie.** Stan strefy
+wygląda na parking, nie na działającą konfigurację:
 
 ```
-typ: CNAME    nazwa: bursztyn    wartość: bartekmerecz-sudo.github.io
+NS  → ns1.aftermarket.pl, ns2.aftermarket.pl
+MX  → blackhole.aftermarket.pl      (poczta nigdzie nie trafia)
+*   → 185.253.212.22                (adres parkingowy AfterMarketu)
 ```
+
+AfterMarket jest też giełdą domen, więc taki zestaw rekordów mają zarówno
+domeny kupione i nieskonfigurowane, jak i **domeny wystawione na sprzedaż**.
+Jeśli `barweselny.pl` nie ma na liście Twoich domen po zalogowaniu, nie da
+się dodać rekordu i trzeba wybrać inną drogę.
+
+**1. W panelu AfterMarketu dodaj rekord:**
+
+| Pole w panelu | Wartość |
+|---|---|
+| Typ | `CNAME` |
+| Nazwa hosta | `bursztyn` |
+| Wartość / cel | `bartekmerecz-sudo.github.io` |
+| TTL | domyślny |
+
+Rekord dodajesz przyciskiem **„Dodaj wpis DNS ręcznie"** albo **„Dodaj nowy
+wpis DNS"**, zależnie od tego, czy strefa ma już jakieś rekordy.
+
+Dwa ograniczenia AfterMarketu, oba nas nie blokują:
+CNAME **można ustawić tylko dla subdomeny**, nie dla domeny głównej — a my
+kierujemy subdomenę `bursztyn`, więc jest dobrze. Drugie: CNAME nie może
+istnieć obok rekordu **A dla tej samej nazwy** — jeśli panel pokaże osobny
+rekord A dla `bursztyn`, usuń go najpierw. Wildcard `*` zostaw.
+
+Jeśli domena ma włączony parking albo stronę sprzedażową, wyłącz je —
+inaczej panel może nadpisywać Twoje rekordy.
 
 W panelu `barweselny.pl` jest **wildcard `*`** — dowolna subdomena rozwiązuje
 się na `185.253.212.22`. Dwie konsekwencje:
@@ -91,7 +125,7 @@ getent hosts bursztyn.barweselny.pl
 
 Jeśli przełączysz adresy przy `185.253.212.22`, strona i wszystkie linki
 w ogłoszeniach przestaną działać, a DNS nie zgłosi żadnego błędu — domena
-będzie prowadzić na Twój drugi hosting.
+będzie prowadzić na parking AfterMarketu.
 
 **3. Dopiero gdy adresy się zgadzają — przywróć plik i podmień adresy:**
 
