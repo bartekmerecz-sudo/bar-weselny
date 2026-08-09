@@ -196,15 +196,18 @@ Bar DIY, jedno stanowisko, szkło wypożyczane, bez drugiego modułu.
 
 | | |
 |---|---|
-| Bar ze skrzynek + blat + stół pomocniczy | 600 zł |
-| Narzędzia, 1 stanowisko | 800 zł |
-| Lód i chłodzenie | 550 zł |
-| Prąd i światło | 400 zł |
-| Woda i higiena | 480 zł |
-| Transport | 500 zł |
-| Ubiór | 300 zł |
+Kwoty to sumy dolnych widełek z listy pozycja po pozycji — nie zaokrąglone
+szacunki kategorii. Rozbicie na sztuki jest w [SPRZET-LISTA.md](SPRZET-LISTA.md).
+
+| Bar ze skrzynek + blat + stół pomocniczy | 750 zł |
+| Narzędzia, 1 stanowisko | 850 zł |
+| Lód i chłodzenie | 560 zł |
+| Prąd i światło | 460 zł |
+| Woda i higiena | 520 zł |
+| Transport | 530 zł |
+| Ubiór | 450 zł |
 | Orzeczenie sanitarne + OC (rok) | 600 zł |
-| **Razem** | **≈ 4 230 zł** |
+| **Razem** | **≈ 4 720 zł** |
 
 Zwraca się na **drugim** weselu Kameralnym.
 
@@ -213,14 +216,14 @@ Bar składany, dwa stanowiska, własne szkło rocks i highball.
 
 | | |
 |---|---|
-| Minimum jak wyżej | 4 230 zł |
+| Minimum jak wyżej | 4 720 zł |
 | Bar składany zamiast DIY | +2 000 zł |
 | Drugie stanowisko narzędziowe | +800 zł |
-| Szkło rocks + highball + kosze | +2 000 zł |
-| Girlanda LED, oświetlenie baru | +350 zł |
-| Skrzynie i wózek | +400 zł |
+| Szkło rocks + highball + kosze | +1 500 zł |
+| Drugi moduł baru | +1 200 zł |
+| Skrzynie, wózek, kufer na narzędzia | +400 zł |
 | Sesja stylizowana (barter) | 0–800 zł |
-| **Razem** | **≈ 9 800–10 600 zł** |
+| **Razem** | **≈ 10 600–11 400 zł** |
 
 ### Docelowa — sezon 2027 bez kompromisów
 Drugi moduł baru, komplet szkła z coupe, zapasy wszystkiego.
