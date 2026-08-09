@@ -16,6 +16,7 @@ START.md                            co zrobić, żeby ruszyć — checklista
 SPRZET.md                           sprzęt: ceny, priorytety, kalkulacja marży
 SPRZET-LISTA.md                     wypiska do odhaczania: zakupy, pakowanie, zwijanie
 OGLOSZENIA.md                       gotowe teksty na OLX, Google, mail do sal
+SALE.md                             sale weselne: skąd wziąć listę, o co pytać, tabela
 FACEBOOK.md                         profil firmowy, posty, grupy, odpowiedzi
 assets/                             logo: 10 wersji × SVG + PNG
 assets/JAK-UZYWAC.txt               który plik logo kiedy

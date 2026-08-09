@@ -12,7 +12,35 @@ zdecydujesz się go publikować, dopisz go tu i w stopce `index.html`.
 
 ---
 
-## Zanim wystawisz — dwie zasady
+## Kolejność kanałów: najpierw darmowe
+
+OLX w kategorii Usługi jest **płatny i nie ma darmowej opcji**. Stawki
+sprawdzone w sierpniu 2026: pakiet Basic na 3 ogłoszenia to 68,49 zł
+(22,83 zł za ogłoszenie), ważność 30 dni. Ogłoszenie wystawione i nieopłacone
+leży w koncie jako „Nie opłacono" i jest niewidoczne — można je aktywować
+kiedykolwiek później, nic nie przepada.
+
+Trzydzieści dni to krótko wobec cyklu weselnego, w którym pary decydują
+miesiącami. Licz się z odnawianiem co miesiąc.
+
+Dlatego zaczynaj od kanałów, które nic nie kosztują i sięgają tych samych par:
+
+| Kanał | Koszt | Uwaga |
+|-------|-------|-------|
+| **Sale weselne** | 0 zł | najlepsze źródło — nie zabierasz im marży na napojach |
+| **Facebook Marketplace** | 0 zł | działa jak OLX, ta sama treść i grafiki |
+| **Grupy weselne na FB** | 0 zł | wariant merytoryczny wchodzi nawet tam, gdzie reklamy są zakazane |
+| **Wizytówka Google** | 0 zł | wchodzi w wyniki na „mobilny bar Łódź" |
+| **Instagram** | 0 zł | nie sprzedaje sam, ale para sprawdzi profil przed napisaniem |
+| OLX | 68,49 zł / 30 dni | dopiero gdy darmowe już pracują |
+| Targi ślubne | 800–2 500 zł | dopiero ze zdjęciami z sesji |
+
+Na OLX wróć z **jednym** ogłoszeniem, nie z trzema, dopóki nie wiesz,
+czy ten kanał cokolwiek Ci przynosi.
+
+---
+
+## Zanim wystawisz — trzy zasady
 
 **1. Nigdy nie pisz, że sprzedajesz, dostarczasz albo zapewniasz alkohol.**
 
