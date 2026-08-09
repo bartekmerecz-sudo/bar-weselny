@@ -344,8 +344,9 @@ c.drawImage(sygn, M, 30, 46, 46, mask="auto")
 tracked("POROZMAWIAJMY", M + 68, 88, "Sans", 8.5, ZLOTO, 2.4)
 c.setFont("Serif", 13)
 c.setFillColorRGB(*KREM)
-c.drawString(M + 68, 64, "@bursztyn.bar")
-c.drawString(M + 68, 44, "kontakt@bursztynbar.pl   ·   +48 000 000 000")
+# telefonu celowo nie publikujemy — kontakt mailem i przez Instagram
+c.drawString(M + 68, 64, "@barweselnybursztyn")
+c.drawString(M + 68, 44, "kontaktbursztyn.barweselny@gmail.com")
 
 c.setFont("SerifIt", 10)
 c.setFillColorRGB(0.55, 0.50, 0.43)

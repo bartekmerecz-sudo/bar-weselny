@@ -1,7 +1,14 @@
 # OGŁOSZENIA — gotowe teksty
 
-Do skopiowania. Wszędzie, gdzie jest `[TELEFON]`, `[MAIL]` i `[IG]`,
-podmień na prawdziwe dane — te same, które wstawisz do `index.html`.
+Do skopiowania, dane są już prawdziwe:
+
+```
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn
+```
+
+**Telefonu nie podajemy** — kontakt idzie mailem i przez Instagram. Jeśli kiedyś
+zdecydujesz się go publikować, dopisz go tu i w stopce `index.html`.
 
 ---
 
@@ -25,7 +32,12 @@ Dodatkowa korzyść: OLX i Facebook zdejmują ogłoszenia, które wyglądają
 na handel alkoholem. Jasne „alkohol po Waszej stronie" chroni ogłoszenie
 przed moderacją.
 
-**2. Musisz mieć obrazek.** OLX bez zdjęcia nie istnieje w wynikach.
+**2. Podawaj tylko to, co działa.** Jeśli wystawiasz ogłoszenie przed
+publikacją strony albo przed założeniem Instagrama — wykreśl te linijki
+i zostaw sam mail. Martwy link szkodzi bardziej niż jego brak, a ogłoszenie
+na OLX można później edytować i dopisać adres.
+
+**3. Musisz mieć obrazek.** OLX bez zdjęcia nie istnieje w wynikach.
 Zanim będziesz miał sesję, użyj `assets/bursztyn-pion-ciemne.png` jako
 głównej grafiki, a jako kolejne — zrzut karty drinków ze strony i zrzut
 sekcji z pakietami. To uczciwe: pokazujesz markę i ofertę, nie udajesz
@@ -91,9 +103,8 @@ zrobić dobrze.
 Napiszcie datę wesela, liczbę gości i miejsce. Odpowiemy w ciągu
 doby z wolnymi terminami i wyceną.
 
-[TELEFON]
-[MAIL]
-[IG]
+kontaktbursztyn.barweselny@gmail.com
+@barweselnybursztyn
 ```
 
 ## OLX 2 — krótkie, na przewijanie z telefonu
@@ -128,7 +139,7 @@ Ceny bez alkoholu. Dojazd do 50 km od Łodzi w cenie.
 
 Łódź i województwo łódzkie. Rezerwacje na 2027.
 
-[TELEFON] · [MAIL]
+kontaktbursztyn.barweselny@gmail.com · @barweselnybursztyn
 ```
 
 ## OLX 3 — poza sezonem: urodziny, firmówki, sylwester
@@ -163,7 +174,7 @@ większe przyjęcia — wycena indywidualna
 Ceny bez alkoholu. Łódź i okolice, dojazd do 50 km w cenie.
 Karta drinków dopasowana do okazji — na firmówkę inna niż na urodziny.
 
-[TELEFON] · [MAIL]
+kontaktbursztyn.barweselny@gmail.com · @barweselnybursztyn
 ```
 
 > Cennik dla imprez niewesełnych nie istnieje jeszcze na stronie.
@@ -172,53 +183,15 @@ Karta drinków dopasowana do okazji — na firmówkę inna niż na urodziny.
 
 ---
 
-## Facebook — grupy weselne
+## Facebook
 
-Szukaj: „Wesele 2027", „Panny Młode — łódzkie", „Giełda terminów ślubnych
-łódzkie", „Ślub i wesele Łódź", „Wesele w stodole Polska".
+Wszystko facebookowe jest w osobnym pliku: **[FACEBOOK.md](FACEBOOK.md)** —
+ustawienia profilu firmowego, dziesięć postów w kolejności publikacji,
+dwa warianty postów do grup weselnych, gotowe odpowiedzi na komentarze
+i Marketplace.
 
-Zasady, których złamanie kosztuje bana: większość grup ma wyznaczony dzień
-na ogłoszenia usługodawców. Sprawdź regulamin w zakładce grupy, zanim
-wkleisz cokolwiek. Nie wchodź w komentarze pod cudzymi pytaniami z ofertą,
-jeśli grupa tego zabrania.
-
-**Post:**
-```
-Mobilny bar koktajlowy na wesela — Łódź i województwo łódzkie,
-terminy 2027.
-
-Przyjeżdżamy do Waszej sali albo w plener, rozkładamy bar i przez
-całą noc robimy drinki na miejscu.
-
-Model jest prosty: alkohol kupujecie Wy, po cenach sklepowych.
-Miesiąc przed weselem dostajecie od nas listę zakupową — konkretne
-butelki i ilości pod Waszą liczbę gości. My przywozimy bar,
-oświetlenie, szkło, sprzęt, dodatki i lód.
-
-do 60 gości — 2 900 zł
-do 120 gości — 4 300 zł
-karta autorska z degustacją — 5 400 zł
-Ceny bez alkoholu, dojazd do 50 km od Łodzi w cenie.
-
-Zaczynamy w 2027 i przyjmujemy trzy rezerwacje w kwartale.
-Szczegóły i karta: bursztyn.barweselny.pl
-
-Chętnie odpowiem na pytania w komentarzach.
-```
-
-**Komentarz-odpowiedź pod pytaniem „a ile alkoholu trzeba kupić?"** —
-to pytanie pada w każdej grupie i jest twoją najlepszą okazją:
-```
-Licząc bezpiecznie: 3–4 drinki na osobę przez całą noc. Przy 100 gościach
-to mniej więcej 10 l mocnego alkoholu w kilku rodzajach, do tego wino
-musujące na aperitif. Ale to zależy od karty — inaczej się liczy, gdy
-w karcie jest sour, a inaczej gdy same longdrinki. Robimy taką listę
-dla par, które u nas rezerwują, i wysyłamy miesiąc przed weselem.
-Jeśli chcecie, mogę podesłać przykładową na priv.
-```
-
-Ten komentarz sprzedaje bez sprzedawania. Odpowiadaj tak zawsze,
-nawet parom, które biorą inny bar.
+Trzymaj to w jednym miejscu. Jeśli poprawisz cennik albo dane kontaktowe,
+zmieniasz je tam, a nie tu i tam.
 
 ---
 
@@ -231,7 +204,7 @@ Wesela i przyjęcia · Łódź i łódzkie
 Alkohol Wasz, reszta nasza
 Terminy 2027 ↓
 ```
-Link: `bursztyn.barweselny.pl` · Awatar: `assets/bursztyn-sygnet-ciemne.png`
+Link: `bartekmerecz-sudo.github.io/bar-weselny` · Awatar: `assets/bursztyn-sygnet-ciemne.png`
 
 **Pierwsze dziewięć postów** — siatka musi być pełna, zanim gdziekolwiek
 podasz link. Para sprawdzi profil przed napisaniem, a pusty profil
@@ -295,7 +268,7 @@ piętnaście sal w promieniu 50 km.
 ```
 Dzień dobry,
 
-nazywam się [IMIĘ], prowadzę BURSZTYN — mobilny bar koktajlowy
+nazywam się Bartek, prowadzę BURSZTYN — mobilny bar koktajlowy
 działający w Łodzi i okolicach. Piszę w sprawie sezonu 2027.
 
 Świadczymy wyłącznie usługę barmańską: przywozimy bar, sprzęt, szkło,
@@ -310,11 +283,11 @@ Chciałbym zapytać o dwie rzeczy:
 Jeżeli byliby Państwo otwarci na polecanie nas parom, które o taki bar
 pytają, chętnie umówię się na krótką rozmowę albo przyjadę pokazać sprzęt.
 
-Oferta: bursztyn.barweselny.pl
+Oferta: bartekmerecz-sudo.github.io/bar-weselny
 
 Pozdrawiam,
-[IMIĘ]
-[TELEFON]
+Bartek
+kontaktbursztyn.barweselny@gmail.com
 ```
 
 ---
@@ -350,8 +323,8 @@ Termin blokuję na tydzień od tej wiadomości bez żadnych zobowiązań.
 Rezerwację potwierdza umowa i zadatek 30%.
 
 Pozdrawiam,
-[IMIĘ]
-[TELEFON]
+Bartek
+kontaktbursztyn.barweselny@gmail.com
 ```
 
 Załącz `oferta/BURSZTYN-oferta-2027.pdf`.
