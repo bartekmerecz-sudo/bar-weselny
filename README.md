@@ -15,6 +15,7 @@ CLAUDE.md                           kontekst projektu (czytany przez Claude Code
 START.md                            co zrobić, żeby ruszyć — checklista
 SPRZET.md                           sprzęt: ceny, priorytety, kalkulacja marży
 SPRZET-LISTA.md                     wypiska do odhaczania: zakupy, pakowanie, zwijanie
+GDZIE-KUPIC.md                      trzy wyjazdy po sprzęt, sklepy i linki
 OGLOSZENIA.md                       gotowe teksty na OLX, Google, mail do sal
 SALE.md                             sale weselne: skąd wziąć listę, o co pytać, tabela
 FACEBOOK.md                         profil firmowy, posty, grupy, odpowiedzi
